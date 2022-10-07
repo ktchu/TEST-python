@@ -9,10 +9,13 @@ authors = ["Your Name <your.name@example.com>"]
 [tool.poetry.dependencies]
 python = "^3.7.2"
 python-slugify = "^6.1.2"
-PyYAML = "^6.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+pre-commit = "^2.20.0"
 
 [tool.poetry.group.docs.dependencies]
-pdoc3 = "^0.10.0"
+pdoc = "^12.2.0"
 
 [tool.poetry.group.test.dependencies]
 coverage = "^6.5.0"
@@ -39,7 +42,7 @@ doctest_optionflags = [
     "ALLOW_UNICODE",
     "ALLOW_BYTES",
 ]
-norecursedirs = ["spikes"]
+norecursedirs = ["docs", "extras", "spikes"]
 
 [tool.coverage.run]
 source = ["src/"]
