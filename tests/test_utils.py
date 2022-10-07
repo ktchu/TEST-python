@@ -20,6 +20,7 @@ def test_get_experiment_name():
     # --- Preparations
 
     expected_date = datetime.date.today().isoformat()
+    assert 1 == 1
 
     # --- Tests
 
