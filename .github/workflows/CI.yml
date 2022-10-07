@@ -32,6 +32,10 @@ jobs:
           - os: macOS-latest
             arch: x86
 
+    defaults:
+      run:
+        shell: bash
+
     runs-on: ${{ matrix.os }}
 
     env:
@@ -82,5 +86,6 @@ jobs:
 
       - name: Run tests
         run: |
-          source .venv/bin/activate
+          #source .venv/bin/activate
+          source $VENV
           poetry run pytest src/ tests/
