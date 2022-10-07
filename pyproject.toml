@@ -8,6 +8,7 @@ authors = ["Your Name <your.name@example.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+python-slugify = "^6.1.2"
 
 [tool.poetry.group.docs.dependencies]
 pdoc3 = "^0.10.0"
