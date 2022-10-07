@@ -10,4 +10,4 @@ repos:
           name: flake8
           entry: flake8
           language: python
-          files: r"^\S*$"
+          files: ".py"
