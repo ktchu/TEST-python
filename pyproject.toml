@@ -7,7 +7,7 @@ readme = "README.md"
 authors = ["Your Name <your.name@example.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.7.2"
 python-slugify = "^6.1.2"
 
 [tool.poetry.group.docs.dependencies]
