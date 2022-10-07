@@ -48,7 +48,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v3
 
-      - name: Set up Python {{ matrix.python-version }} - ${{ matrix.os }} - ${{ matrix.arch }}
+      - name: Set up Python ${{ matrix.python-version }} - ${{ matrix.os }} - ${{ matrix.arch }}
         uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
@@ -86,7 +86,8 @@ jobs:
       - name: Run tests
         run: |
           source .venv/bin/activate
-          tox -e py
+          poetry run pytest src/ tests/
+          #tox -e py
 
 #      - name: Lint with flake8
 #        run: |
