@@ -5,9 +5,9 @@ repos:
           name: black
           entry: black
           language: python
-          files: r"*.py"
+          files: r"*.py$"
         - id: flake8
           name: flake8
           entry: flake8
           language: python
-          files: r"*.py"
+          files: r"*.py$"
