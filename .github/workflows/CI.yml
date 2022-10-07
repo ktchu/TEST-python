@@ -80,7 +80,9 @@ jobs:
       # --- Run tests
 
       - name: Run tests
-        run: tox -e py
+        run: |
+          source .venv/bin/activate
+          tox -e py
 
 #      - name: Lint with flake8
 #        run: |
