@@ -44,7 +44,7 @@ jobs:
 
     env:
         codecov-arch: x64
-        codecov-version: '1.7'
+        codecov-version: "3.10"
 
     steps:
 
@@ -83,8 +83,8 @@ jobs:
           key: venv-${{ runner.os }}-${{ runner.arch }}-${{ matrix.python-version }}-${{ hashFiles('**/poetry.lock') }}
 
       - name: Install package dependencies
-        run: poetry install
         if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
+        run: poetry install
 
       # --- Run tests
 
@@ -93,9 +93,16 @@ jobs:
           source $VENV
           poetry run pytest --cov-report=xml
 
-      # --- Upload coverage statistics
+      # --- Upload coverage statistics to codecov.io
 
-      - name: Upload coverage
+      - name: Upload code coverage data to codecov.io
+        # Only run for 'main' branch running on 'Linux' with the latest version of Julia
+        if: |
+            github.ref_name == 'main' &&
+            runner.os == 'Linux' &&
+            matrix.arch == env.codecov-arch &&
+            matrix.version == env.codecov-version
+
         uses: codecov/codecov-action@v3
         with:
           # token: ${{ secrets.CODECOV_TOKEN }}  # Only required for private repositories
