@@ -18,7 +18,7 @@ concurrency:
 
 jobs:
   build:
-    name: Python ${{ matrix.python-version }} (${{ matrix.os }}, ${{ matrix.arch }}, ${{ github.event_name }})
+    name: Python ${{ matrix.python-version }} (${{ matrix.os }}, ${{ matrix.arch }})
 
     strategy:
       fail-fast: false
