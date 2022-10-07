@@ -8,7 +8,7 @@ Unit tests for `utils.py` module.
 import datetime
 
 # Local imports
-import utils
+from python_test import utils
 
 
 # --- Tests
