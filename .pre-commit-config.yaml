@@ -22,12 +22,3 @@ repos:
       entry: flake8
       language: python
       types: [python]
-  #- repo: https://github.com/psf/black
-  #  rev: 22.10.0
-  #  hooks:
-  #    - id: black
-  #- repo: https://github.com/pycqa/flake8
-  #  rev: 5.0.0
-  #  hooks:
-  #  - id: flake8
-  #    args: [--config, .flake8]
