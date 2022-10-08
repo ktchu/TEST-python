@@ -53,3 +53,10 @@ def multiply(x, y):
     Multiply x and y.
     """
     return x * y
+
+
+def axpy(a, x, y):
+    """
+    Return ax + y.
+    """
+    return a * x + y
