@@ -39,3 +39,10 @@ def get_experiment_name(description: str, include_timestamp: bool = False) -> st
     experiment_name = f"{datestamp}{timestamp}-{description_slugified}"
 
     return experiment_name
+
+
+def add(x, y):
+    """
+    Add x and y.
+    """
+    return x + y
