@@ -36,6 +36,15 @@
             <li>
                     <a class="function" href="#add">add</a>
             </li>
+            <li>
+                    <a class="function" href="#multiply">multiply</a>
+            </li>
+            <li>
+                    <a class="function" href="#axpy">axpy</a>
+            </li>
+            <li>
+                    <a class="function" href="#diff">diff</a>
+            </li>
     </ul>
 
 
@@ -107,6 +116,27 @@
 </span><span id="L-46"><a href="#L-46"><span class="linenos">46</span></a><span class="sd">    Add x and y.</span>
 </span><span id="L-47"><a href="#L-47"><span class="linenos">47</span></a><span class="sd">    &quot;&quot;&quot;</span>
 </span><span id="L-48"><a href="#L-48"><span class="linenos">48</span></a>    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+</span><span id="L-49"><a href="#L-49"><span class="linenos">49</span></a>
+</span><span id="L-50"><a href="#L-50"><span class="linenos">50</span></a>
+</span><span id="L-51"><a href="#L-51"><span class="linenos">51</span></a><span class="k">def</span> <span class="nf">multiply</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+</span><span id="L-52"><a href="#L-52"><span class="linenos">52</span></a>    <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-53"><a href="#L-53"><span class="linenos">53</span></a><span class="sd">    Multiply x and y.</span>
+</span><span id="L-54"><a href="#L-54"><span class="linenos">54</span></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="L-55"><a href="#L-55"><span class="linenos">55</span></a>    <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span>
+</span><span id="L-56"><a href="#L-56"><span class="linenos">56</span></a>
+</span><span id="L-57"><a href="#L-57"><span class="linenos">57</span></a>
+</span><span id="L-58"><a href="#L-58"><span class="linenos">58</span></a><span class="k">def</span> <span class="nf">axpy</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+</span><span id="L-59"><a href="#L-59"><span class="linenos">59</span></a>    <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-60"><a href="#L-60"><span class="linenos">60</span></a><span class="sd">    Return ax + y.</span>
+</span><span id="L-61"><a href="#L-61"><span class="linenos">61</span></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="L-62"><a href="#L-62"><span class="linenos">62</span></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+</span><span id="L-63"><a href="#L-63"><span class="linenos">63</span></a>
+</span><span id="L-64"><a href="#L-64"><span class="linenos">64</span></a>
+</span><span id="L-65"><a href="#L-65"><span class="linenos">65</span></a><span class="k">def</span> <span class="nf">diff</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+</span><span id="L-66"><a href="#L-66"><span class="linenos">66</span></a>    <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="L-67"><a href="#L-67"><span class="linenos">67</span></a><span class="sd">    Difference of x and y.</span>
+</span><span id="L-68"><a href="#L-68"><span class="linenos">68</span></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="L-69"><a href="#L-69"><span class="linenos">69</span></a>    <span class="k">return</span> <span class="n">x</span> <span class="o">-</span> <span class="n">y</span>
 </span></pre></div>
 
 
@@ -185,6 +215,78 @@
 
 
             <div class="docstring"><p>Add x and y.</p>
+</div>
+
+
+                </section>
+                <section id="multiply">
+                            <input id="multiply-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">multiply</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">x</span>, </span><span class="param"><span class="n">y</span></span><span class="return-annotation">):</span></span>
+
+                <label class="view-source-button" for="multiply-view-source"><span>View Source</span></label>
+
+    </div>
+    <a class="headerlink" href="#multiply"></a>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="multiply-52"><a href="#multiply-52"><span class="linenos">52</span></a><span class="k">def</span> <span class="nf">multiply</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+</span><span id="multiply-53"><a href="#multiply-53"><span class="linenos">53</span></a>    <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="multiply-54"><a href="#multiply-54"><span class="linenos">54</span></a><span class="sd">    Multiply x and y.</span>
+</span><span id="multiply-55"><a href="#multiply-55"><span class="linenos">55</span></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="multiply-56"><a href="#multiply-56"><span class="linenos">56</span></a>    <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span>
+</span></pre></div>
+
+
+            <div class="docstring"><p>Multiply x and y.</p>
+</div>
+
+
+                </section>
+                <section id="axpy">
+                            <input id="axpy-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">axpy</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">a</span>, </span><span class="param"><span class="n">x</span>, </span><span class="param"><span class="n">y</span></span><span class="return-annotation">):</span></span>
+
+                <label class="view-source-button" for="axpy-view-source"><span>View Source</span></label>
+
+    </div>
+    <a class="headerlink" href="#axpy"></a>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="axpy-59"><a href="#axpy-59"><span class="linenos">59</span></a><span class="k">def</span> <span class="nf">axpy</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+</span><span id="axpy-60"><a href="#axpy-60"><span class="linenos">60</span></a>    <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="axpy-61"><a href="#axpy-61"><span class="linenos">61</span></a><span class="sd">    Return ax + y.</span>
+</span><span id="axpy-62"><a href="#axpy-62"><span class="linenos">62</span></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="axpy-63"><a href="#axpy-63"><span class="linenos">63</span></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+</span></pre></div>
+
+
+            <div class="docstring"><p>Return ax + y.</p>
+</div>
+
+
+                </section>
+                <section id="diff">
+                            <input id="diff-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">diff</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">x</span>, </span><span class="param"><span class="n">y</span></span><span class="return-annotation">):</span></span>
+
+                <label class="view-source-button" for="diff-view-source"><span>View Source</span></label>
+
+    </div>
+    <a class="headerlink" href="#diff"></a>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="diff-66"><a href="#diff-66"><span class="linenos">66</span></a><span class="k">def</span> <span class="nf">diff</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+</span><span id="diff-67"><a href="#diff-67"><span class="linenos">67</span></a>    <span class="sd">&quot;&quot;&quot;</span>
+</span><span id="diff-68"><a href="#diff-68"><span class="linenos">68</span></a><span class="sd">    Difference of x and y.</span>
+</span><span id="diff-69"><a href="#diff-69"><span class="linenos">69</span></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="diff-70"><a href="#diff-70"><span class="linenos">70</span></a>    <span class="k">return</span> <span class="n">x</span> <span class="o">-</span> <span class="n">y</span>
+</span></pre></div>
+
+
+            <div class="docstring"><p>Difference of x and y.</p>
 </div>
 
 
