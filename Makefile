@@ -7,6 +7,10 @@
 SRC_DIR=src
 CODE_DIRS=${SRC_DIR} tests
 
+# Package directories
+PKG_DIR=src/python_test
+DOCS_DIR=docs/python_test
+
 # Testing parameters
 NPROCS=auto
 
@@ -78,7 +82,7 @@ radon-raw:
 
 ## Generate API documentation in HTML format
 docs:
-	pdoc --html -o docs/api ${SRC_DIR}
+	pdoc -o ${DOCS_DIR} ${PKG_DIR}
 
 # --- Utility rules
 
@@ -90,9 +94,9 @@ clean:
 	find . -type d -name "__pycache__" -delete  # compiled python
 	find . -type f -name "*.py[co]" -delete  # compiled python
 	rm -rf .cache  # pytest
-	rm -rf .coverage .coverage.* coverage htmlcov  # coverage
+	rm -rf .coverage .coverage.* coverage htmlcov coverage.xml  # coverage
 	find . -name "*.log" -exec rm -f {} \;  # log files
-	rm -rf docs/api  # generated API documentation
+	rm -rf ${DOCS_DIR}  # generated API documentation
 
 # --- Makefile Self-Documentation
 
