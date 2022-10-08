@@ -161,7 +161,7 @@ jobs:
 
       - name: Deploy documentation
         # Only run when the 'main' branch is updated
-        if: github.ref_name == 'main'
+        if: github.ref_name == 'main' && !startsWith(github.ref, 'refs/pull/')
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: docs/python_test
