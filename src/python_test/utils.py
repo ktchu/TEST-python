@@ -46,3 +46,24 @@ def add(x, y):
     Add x and y.
     """
     return x + y
+
+
+def multiply(x, y):
+    """
+    Multiply x and y.
+    """
+    return x * y
+
+
+def axpy(a, x, y):
+    """
+    Return ax + y.
+    """
+    return a * x + y
+
+
+def diff(x, y):
+    """
+    Difference of x and y.
+    """
+    return x - y
