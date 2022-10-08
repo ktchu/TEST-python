@@ -157,7 +157,7 @@ jobs:
       # --- Build and deploy documentation
 
       - name: Build documentation
-        run: make docs
+        run: poetry run make docs
 
       - name: Deploy documentation
         uses: JamesIves/github-pages-deploy-action@v4
