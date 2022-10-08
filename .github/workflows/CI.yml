@@ -160,6 +160,8 @@ jobs:
         run: poetry run make docs
 
       - name: Deploy documentation
+        # Only run when the 'main' branch is updated
+        if: github.ref_name == 'main'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: docs/python_test
