@@ -60,3 +60,10 @@ def axpy(a, x, y):
     Return ax + y.
     """
     return a * x + y
+
+
+def diff(x, y):
+    """
+    Difference of x and y.
+    """
+    return x - y
