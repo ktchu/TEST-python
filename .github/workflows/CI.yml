@@ -110,7 +110,9 @@ jobs:
           fail_ci_if_error: true
 
 
-  docs:
+  build-docs:
+    name: Build Documentation
+
     runs-on: ubuntu-latest
 
     steps:
