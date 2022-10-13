@@ -74,3 +74,10 @@ def diff2(x, y):
     Difference of x and y.
     """
     return x - y
+
+
+def diff3(x, y):
+    """
+    Difference of x and y.
+    """
+    return x - y
